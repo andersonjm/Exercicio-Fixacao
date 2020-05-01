@@ -52,7 +52,7 @@ namespace ExFix.Entities
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Order moment: " + Moment.ToString("dd/MM/yyyy HH:mm:ss"));
             sb.AppendLine("Order Status: " + Status);
-            sb.AppendLine("Client: " + Client.Name + " (" + Client.BirthDate + ") - " + Client.Email);
+            sb.AppendLine("Client: " + Client.Name + " (" + Client.BirthDate.ToString("dd/MM/yyyy") + ") - " + Client.Email);
             sb.AppendLine("Order items:");
 
             foreach (OrderItem item in Items)
