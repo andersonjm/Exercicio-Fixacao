@@ -32,7 +32,7 @@ namespace ExFix
 
             for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine($"Enter #{1} item data:");
+                Console.WriteLine($"Enter #{i} item data:");
                 Console.Write("Product name: ");
                 string productName = Console.ReadLine();
                 Console.Write("Product price: ");
@@ -40,7 +40,7 @@ namespace ExFix
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
 
-                Product product = new Product(name, price);
+                Product product = new Product(productName, price);
                 OrderItem item = new OrderItem(quantity, product.Price, product);
 
                 order.AddItem(item);
